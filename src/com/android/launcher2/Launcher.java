@@ -3876,6 +3876,8 @@ public final class Launcher extends Activity
 
     /* Cling related */
     private boolean isClingsEnabled() {
+        // disable clings for cloud (should use a property)
+        if (true) return false;
         // disable clings when running in a test harness
         if(ActivityManager.isRunningInTestHarness()) return false;
 
